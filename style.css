@@ -1,0 +1,719 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color:#fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets1/farmer11.jpg);
+
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    padding: 10px 10%;
+}
+/* ------------------------------------------ NAVBAR-------------------------- */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap; 
+    
+}
+nav p{
+    font-family:'Poppins',sans-serif;
+    font-size: 40px;
+    font-weight: 1000;
+    color: #00FF00;
+}
+nav p  span{
+    color:#00FF00;
+}
+
+  .logo{
+    width: 140px;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    margin-right: 10px;
+ } 
+ #logotext{
+     position: absolute;
+     top: 33px;
+     left: 15%;
+     animation: blinker 3s linear infinite;
+    
+ }
+ 
+
+  
+
+@keyframes blinker {
+    0%{
+        opacity: 1;
+        color: #00FF00;
+
+    }
+    25%{
+        opacity: 0.5;
+        color:#00FF00 ;
+        transform: scaleX(1.01)  ;
+
+    }
+    50% {
+        opacity: 0.3;
+        color:#fff;
+        
+        transform: scaleX(1.01);
+    }
+    75%{
+        opacity: 0.5;
+        color:#fff;
+    }
+    100%{
+        opacity: 1;
+        color: #00FF00;
+    }
+}
+ nav ul{
+    position: absolute;
+    right: 10px;
+    top: 43px;
+    
+ }
+ 
+ nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+   
+ }
+
+
+ nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+ }
+ nav ul li a::after{
+    content: '';
+    width:  0%;
+    height: 3px;
+    background:#00FF00;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: 0.5s;
+
+ }
+ nav ul li a:hover::after{
+    width: 100%;
+
+ }
+
+
+
+ .headertext{
+    margin-top: 20%;
+    font-size: 30px;
+
+ }
+ .headertext h1{
+    margin-top: 20px;
+    color:#c16611;
+   transition:  transform 2s , color 0.5s;
+    font-size: 60px;
+
+
+ }
+ .headertext h1:hover{
+     color:#00FF00;
+    transform: scaleX(1.05) scaleY(1.05);
+    
+
+ }
+ .headertext p{
+    font-size: 40px;
+    color:#00FF00;
+}
+ .headertext h1 span{
+    color:#00FF00;
+    text-shadow: 2px ;
+    font-weight: 7000;
+ }
+    /* --------------------------------------ABOUT SECTION -----------------------*/
+    #about{
+        padding: 80px 0px;
+    }
+    .row
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .abtcol1{
+        flex-basis: 35%;
+    }
+    .abtcol1 img{
+     width: 100%;
+        border-radius: 15px;
+    }
+    .abtcol2{
+        flex-basis: 60%;
+    }
+    .abth1{
+        font-size: 60px;
+        font-weight: 600;
+        color: white;
+    }
+    .abttabs{
+        display: flex;
+        margin: 20px 0px 0px 40px;
+    }
+    .abttabitems{
+        margin-right: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    }
+    .abttabitems::after{
+        content: '';
+        width: 0px;
+        height: 3px;
+        background: #00FF00;
+        position: absolute;
+        left: 0px;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    .abttabitems.active-link::after{
+        width: 50%;
+    }
+    .abttabcontents ul li{
+        list-style: none;
+        margin: 10px 0px;
+    }
+    .abttabcontents ul li span{
+        color:#00FF00;
+        font-size: 14px;
+    }
+    .abttabcontents{
+        display: none;
+    }
+    .abttabcontents.active-tab{
+        display: block;
+    }
+
+/* -------------------KeyPerson--------------------- */
+ 
+
+/* ----------------------------------------SERVICES---------------------------------------------- */
+#services
+{
+    padding: 30px 0;
+
+}
+.serviceslist
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top:50px;
+}
+.serviceslist div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s , transform 0.5s;
+}
+.serviceslist div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.serviceslist div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.serviceslist div a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.serviceslist div:hover
+{
+    background:#00FF00;
+    transform:translateY(-10px);
+    font-weight: bold;
+}
+/* -----------------------------------------------------------------Portfolio------------------------------------------------------------- */
+#portfolio{
+    padding: 50px 0px;
+}
+.worklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 50px;
+  margin-top: 50px;
+  
+     
+
+
+}
+.work {
+ border-radius: 10px;
+ position: relative;
+ overflow: hidden;
+
+ 
+}
+.work img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0,5s;
+    height: 100%;
+
+}
+.layer{
+    width: 100%;
+    height: 0;
+   background: linear-gradient(rgba(0,0,0,0.6),#00FF00);
+   border-radius: 10px;
+position:absolute;
+bottom: 0px;
+left: 0px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ padding: 0px 40px;
+ text-align: center;
+ font-size: 14px;
+ overflow: hidden;
+ transition: height 0.6s;
+
+
+ 
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #00FF00;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+  
+}
+ .work:hover img{
+transform: scale(1.1);
+ }
+ .work:hover .layer{
+ 
+height: 100%;
+ }
+ .btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #00FF00;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition:background 0.5s;
+ }
+ .btn:hover{
+    background:#00FF00;
+
+ }
+ /* -------------------------------------------------------CONTACT_____________________________________________________________- */
+ 
+ .contactleft{
+    flex-basis: 35%;
+    margin-top: 30px;
+ }
+ 
+ .contactright{
+    flex-basis: 60%; 
+    position: relative;
+    
+ }
+ .contactleft p{
+    margin-top: 30px;
+    margin-top: 30px;
+
+
+ }
+ 
+ .contactleft p i {
+    color:#00FF00;
+    margin-right: 15px;
+    font-size: 25px;
+ }
+ #contactlocation{
+    color:#fff ;
+    text-decoration: none;
+    font-weight: 300;
+ }
+ .socialicons
+ {
+    margin-top: 30px;
+ }
+ .socialicons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+ }
+ .socialicons a:hover{
+    color: #00FF00;
+    transform: translateY(-5px);
+
+ }
+ .btn.btn2
+ {
+    display: inline-block; /* to make button to shift towards left because btn class sets display to block so that it can center element using margin auto, now we are changing display to inline block so that margin auto doesnt work */
+    /* background: #00FF00; */
+    background-color: #080808;
+ }
+ .btn.btn2:hover{
+
+    background:#00FF00;
+    font-weight: bold;
+
+}
+ 
+ .contactright form {
+width: 100%;
+ 
+ 
+ }
+ #getintouch{
+    position: absolute;
+    top: 4.3%;
+ }
+  
+ form input ,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #262626;
+ }
+ form .btn2{
+    cursor: pointer;
+    padding: 16px 60px;
+    margin-top: 20px;
+ }
+ .copyright{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    
+ }
+
+
+/* ---------------------------------keyPerson---------------- */
+#anil{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+
+}
+
+/* ---------------------------Imgae carosel------------------------ */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+ 
+}
+ 
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(51, 9, 202);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #00FFFF;
+}
+.slideshow-container img{
+    border-radius: 40px;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(162, 35, 35, 0.8);
+}
+
+/* Caption text */
+.text { color: rgb(162, 19, 234);
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: rgb(162, 19, 234);
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.clicked{
+    transform: scaleX(0.7) scaleY(0.7);
+}
+
+/* -----------------------Footer---------------------- */
+ 
+
+ /* ----------------------------------------------------RESPONSIVENESS--------------------------------------------------- */
+  
+ nav .fa-solid{
+    display: none;
+ }
+ @media only screen and (max-width:600px)
+ {
+    #header{
+        /* background-image: url(./assets1/desktop.png) */
+
+    }
+    .logo{
+        display: block;
+        position: absolute;
+        left: 30%;  
+             
+    }
+    #logotext{
+        display: block;
+        position: absolute;
+        top: 150px;
+        font-size:20px ;
+    }
+    .headertext  {
+        font-size:16px ;
+        margin-top: 100%;
+    }
+    .headertext h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        position:absolute;
+        top: 10px;
+        right: 5px;
+        display: block;
+        font-size: 45px;
+
+     }
+     
+     nav ul {
+        background: #00FF00;
+        position:fixed;
+        top: 0px;
+        right: 0px;
+        width: 200px;
+        height: 100vh;
+         padding-top: 50px;
+         transition: right 0.5s;
+         z-index: 2;
+         display: none;
+     }
+     nav ul li{
+        display: block;
+        margin: 25px;
+     }
+     nav ul .fa-solid{
+        position: absolute;
+        top: 45%;
+        left: 50px;
+
+     }
+.abth1{
+    font-size: 40px;
+
+}
+.abtcol1,.abtcol2{
+    flex-basis: 100%;
+}
+.abtcol1{
+    margin-bottom: 30px;
+}
+.abtcol2{
+    font-size: 14px;
+}
+.abttabitems{
+    font-size: 16px;
+    margin-right: 20px;
+
+}
+.contactleft,.contactright{
+    flex-basis: 100%;
+}
+ 
+.copyright{
+    font-size: 14px;
+}
+ 
+
+ }
+ #msg{
+    color:#61b752 ;
+    margin-top: -30px;
+    display: block;
+
+ }
+
+
+
+ @media screen and (min-width: 600px) {
+    .glow-on-hover {
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+    }
+    
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+    
+    .glow-on-hover:active {
+        color: #000
+    }
+    
+    .glow-on-hover:active:after {
+        background: transparent;
+    }
+    
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+    
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+    
+    @keyframes glowing {
+        0% { background-position: 0 0; }
+        50% { background-position: 400% 0; }
+        100% { background-position: 0 0; }
+    }
+    
+  }
+
+ 

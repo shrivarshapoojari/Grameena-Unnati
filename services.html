@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        body {
+            color: white;
+            background:#080808;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            border:2px solid red;
+            padding: 10px;
+        }
+        html{
+    scroll-behavior: smooth;
+}
+        .heading {
+            display: inline;
+            /* width: 100%; */
+            height: 200px;
+            /* background-color: lavender;
+            color: darkorchid */
+        }
+        img {
+            width: 350px;
+            height: 200px;
+            border: 2px solid white;
+            margin: 5px;
+            padding: 5px;
+            box-sizing: border-box;
+            float: right;
+
+        }
+        p {
+            margin-left: 10px;
+        }
+        .training,
+        .certification,
+        .self-sustainability{
+            /* border: 1px solid #00ff00; */
+            border: 2px solid #fff;
+            width: 96%;
+            height: 450px;
+            text-overflow: scroll;
+            background-color: #262626;
+            color: #fff;
+            overflow-y: scroll;
+            margin: 5px;
+             margin-bottom: 30px;
+            border-radius: 20px;
+            transition: transform 0.6s;
+          
+            
+        }
+        .certification{
+            height: 490px;
+        }
+        .self-sustainability{
+            height: 600px;
+        }
+        .otherservices{
+            margin-left: 20%;
+            width: 50%;
+            border: 2px solid #fff;
+            border-radius: 20px;
+            transition: transform 0.6s;
+        }
+        .training:hover{
+            transform:translateY(-10px) scaleX(1.01) scaleY(1.01);
+            border: 1px solid  #0000ff;
+            margin: 20px;
+            
+        }
+        .certification:hover{
+            transform:translateY(-10px) scaleX(1.01) scaleY(1.01);
+            border: 1px solid #0000ff;
+            margin: 20px;
+        } 
+          .self-sustainability:hover{
+            transform:translateY(-10px) scaleX(1.01) scaleY(1.01);
+            border: 1px solid #0000ff;
+            margin: 20px;
+        }
+        .otherservices:hover{
+            transform:translateY(-10px) scaleX(1.01) scaleY(1.01);
+            border: 1px solid #0000ff;
+           
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+        img{
+            transition: transform 0.6s;
+
+        }
+        img:hover{
+            transform: scaleX(1.08) scaleY(1.08);
+        }
+         
+        
+       
+        #mainh1{
+            text-align: center;
+            color:#00ff00;
+            transition: transform 0.5s;
+        }
+        #mainh1:hover{
+          transform: scaleX(1.2) scaleY(1.2);
+          color: #0000ff;
+        }
+        
+        body::-webkit-scrollbar{
+    display: none;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  .training>p,h2{
+    padding: 15px;
+  }
+  .certification>p,h2{
+    padding: 15px;
+  }
+  .self-sustainability>p,h2{
+    padding: 15px;
+  }
+  .otherservices>p,h2{
+    padding-left:10px ;
+  }
+  
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 2px solid #00FF00;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition:background 0.5s;
+ }
+ .btn:hover{
+   background: #00FF00;
+   border-radius: 9px;
+   font-weight: bold;
+   transform: scaleX(1.1) scaleY(1.1);
+   
+
+ }
+ @media only screen and (max-width:600px){
+  body{
+    border: 0px solid #080808;
+  }
+ .otherservices{
+    width: 100%;
+
+    margin-left: 0px;
+}
+.otherservices img,.certification img, .training img, .self-sustainability img{
+    display: none;
+}
+.training,.certification,.self-sustainability{
+               width: 100%;
+        }
+        .training:hover,.certification:hover,.self-sustainability:hover,.otherservices:hover{
+            transform: translateY(0px) scaleX(1) scaleY(1) ;
+            margin-left: 0px;
+        }
+ }
+ 
+
+
+    </style>
+</head>
+<body>
+    <!-- <h3 style="text-decoration: underline red;;">We provide many service such as:</h3> -->
+    <DIV class="heading">
+        <h1 id="mainh1"> OUR SERVICES</h1>
+    </DIV>
+    <div class="services">
+
+        <div class="training">
+            <h2>Organic farming-Management,Training & Demonstration</h2>
+            <p><img style="float: right;" src="./assets1/training.jpeg">Organic farming is attracting global attention and it is
+                opening new vistas for farming community to
+                maximize
+                earning and minimizing the damage to the mother earth, an aspiration of every farmer.</p>
+            <p>However, we observed in our experience people spending longer than time and resources in preparing
+                the
+                processes leading to successful implementation transition strategy crop planning, invest planning.
+                We have more than 30 years of experience working with 10000 of farmers either directly or through
+                government
+                schemes in India.</p>
+            <p>We advise a frugal strategy to initiate into organic farming which not only reduces resources and
+                time
+                required but also enable a strong market linkage.</p>
+
+        </div>
+        <div class="certification">
+            <h2>Certification Services (PGS, NPOP, GAP, etc.)</h2>
+            <p><img style="float: right;" src="./assets1/certification.jpeg">WeThe certification adds value to the noble journey of
+                responsible farming. That includes not only
+                organic
+                but also good agriculture practices (GAP).</p>
+            <p>It is a key depreciates for the products grown under the packages of practices such as NPOP, PGS, GAP
+                and
+                others European standards etc. </p>
+            <p> have come across the situations despite practicing robots organic farming cultivation. People are
+                not
+                aware of the certification in discovering the better markets and realising the higher price. </p>
+            <p>We will handhold the farmers through the process of implementing package of practices relevant to
+                each
+                individual certification standards such as PGS, NPOP, GAP etc.</p>
+            <p>We also advise on the standards relating to processing of organic produces. We have direct contact
+                with
+                the reputed organic certification agency, and thus we will help in securing the certifications and
+                affordable price.</p>
+
+        </div>
+
+        <div class="self-sustainability">
+            <h2> Formation of FIGs, & FPOs, and mentor them to achieve self-sustainability</h2>
+            <p><img style="float: right; height: auto;" src="./assets1/fig.jpg">FPOs/FIGs have become main stay of supplying
+                commodities
+                meeting the requirement for specific
+                purpose.
+            </p>
+            <p>Food companies worldwide developed robust system of working with the farmers to source the raw
+                materials
+                meeting the requirement.</p>
+            <p>FPO’s in India are gaining traction to become stronger supply chain partner for the food processors
+                and
+                exports.
+            </p>
+            <p>We have expertise in creating and nurturing the FPOs for last 5 years. So far we have incubated 60
+                No’s
+                of FPOs in India mainly in south Indian states and encompassing about 30,000 farmers.</p>
+            <p>The above FPOs have been working on all agri and horti commodities such as, cereals, pulses, fruit &
+                vegetables. We also have nurtured few groups in the areas of animal husbandry and textile.</p>
+            <p>We can advise the corporates to build the relationship with the FPOs by designing a robust
+                partnership
+                model.</p>
+            <P>We can also handhold farmers group in terms of training, crop planning, crop husbandry and
+                post-harvest
+                practices.
+            </P>
+        </div>
+        <div class="otherservices">
+            <h2>Other Services like</h2>
+            <p><img style="float: right; height: auto;" src="./assets1/others.jpg"> </p>
+            <p> Farm Planning and Post-harvest management advisory. </p>
+            <p>Advising on end-to-end value chain integration of agri ventures</p>
+            <p>Marketing linkage with buyers.</p>
+            <p>Financial Advisory for farmers to improve their financial stability.</p>
+            <p>Advising on Agri business ventures.</p>
+        </div>
+
+    </div>
+    <!-- <button type="button" class="btn"><a href="./index.html">HOME</a></button> -->
+    <a href="./index.html" class="btn">HOME</a>
+</body>
+
+</html>

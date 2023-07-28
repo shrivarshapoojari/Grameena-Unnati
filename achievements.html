@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        body {
+            color: white;
+            background:#080808;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            border: 1px solid red;
+            
+        }
+        html{
+    scroll-behavior: smooth;
+}
+
+        .heading {
+            display: inline;
+            /* width: 100%; */
+            height: 200px;
+            /* background-color: lavender;
+            color: darkorchid */
+        }
+
+        img {
+            width: 350px;
+            height: 200px;
+            border: 2px solid white;
+            margin: 5px;
+            padding: 5px;
+
+        }
+
+     
+
+        
+
+        p {
+            margin-left: 10px;
+        }
+
+
+        .training
+          {
+            /* border: 1px solid #00ff00; */
+            border: 2px solid #fff;
+            width: 96%;
+            height: fit-content;
+            text-overflow: scroll;
+            background-color: #262626;
+            color: #fff;
+            overflow-y: scroll;
+            margin: 5px;
+             margin-bottom: 30px;
+            border-radius: 20px;
+            transition: transform 0.6s;
+            position: relative;
+          padding: 15px;
+            
+        }
+        .training:hover{
+            transform:translateY(-10px) scaleX(1.01) scaleY(1.01);
+            border: 1px solid  #0000ff;
+            margin: 20px;
+            
+        }
+         
+
+        a {
+            text-decoration: none;
+
+        }
+        img{
+            transition: transform 0.6s;
+
+        }
+        img:hover{
+            transform: scaleX(1.1) scaleY(1.1);
+         }          
+        
+       
+        #mainh1{
+            text-align: center;
+            color:#00ff00;
+            transition: transform 0.5s;
+        }
+        #mainh1:hover{
+          transform: scaleX(1.2) scaleY(1.2);
+          color: #0000ff;
+        }
+        
+        body::-webkit-scrollbar{
+    display: none;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  .training>p,h2{
+    padding: 15px;
+  }
+  
+  
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 2px solid #00FF00;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition:background 0.5s;
+ }
+ .btn:hover{
+   background: #00FF00;
+   border-radius: 9px;
+   font-weight: bold;
+   transform: scaleX(1.1) scaleY(1.1);
+   
+
+ }
+ #two{
+   position: absolute;
+   right:1.5%;
+   top: 53%;
+ }
+ @media (max-width: 1409px) {
+  /* Styles to hide the element */
+  .bbs{
+    display: none;
+  }
+}
+@media only screen and (max-width:600px){
+  body{
+    border:0px solid #080808;
+  }
+
+}
+
+
+    </style>
+</head>
+
+<body>
+    <!-- <h3 style="text-decoration: underline red;;">We provide many service such as:</h3> -->
+    <DIV class="heading">
+        <h1 id="mainh1"> Our Achievements</h1>
+    </DIV>
+    <div class="services">
+
+        <div class="training">
+            <h2>Association With Big Basket since 2021</h2>
+            <p><img style="float: right;" src="./assets1/amazon.jpg" class="bbs"> Gramina Unnati has been associated with Big Basket , a Tata venture to assist in getting organic certifications for farmer groups in consortium with Reliable Organic Certification Agency in Bangalore.
+               </p>
+             <h2>Association With Amazon since 2020</h2>
+               <p><img style="float: right;" src="./assets1/certification.jpeg" id="two" class="bbs">We are associated with Amazon for organic product segment development including establishing a back-end supply chain with farmers's groups in thenstate of Maharashtra State for meeting the compliance requirement.</p>
+        
+        <h2>Other Achievements</h2>
+           <ul>
+            <li>
+                <p>We have been undertaking Training programs for members of FPO  based in Chikkaballapur for venturing into organic farming.</p>
+            </li>
+            <li>
+                <p>Associated with the Organic supply chain and retailing company o of Biju to secure the</p>
+                   <p> supply of organic produces from a group of farmers.</p>
+            </li>
+            <li>
+                <p>
+                    Assisting well-known organic FPO of Nelamangala to establish production and grading</p>
+protocol at the farmer level to help them to improve the quality and compliance. Also
+helped them to onboard for certifications.
+
+                </p>
+            </li>
+            <li>
+                <p>Recently the company has linked a Bangalore-based Fish retailing company
+                    with FPOs based in Mandya for the supply of fish.
+                   </p>
+            </li>
+            <li><p> Hand hold formation of “Bangalore Store” in London to cater to EU and UK market for FPOs of Karnataka.</p></li>
+           </ul>
+        
+            </div>
+
+
+
+        
+    </div>
+    <!-- <button type="button" class="btn"><a href="./index.html">HOME</a></button> -->
+    <a href="./index.html" class="btn">HOME</a>
+</body>
+
+</html>

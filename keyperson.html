@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keypersons</title>
+    <style>
+        body {
+            color: white;
+            background:#080808;
+            
+            margin: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            padding: 10px;
+            border: 1px solid red;
+            padding: 30px;
+        }
+
+        .heading {
+            display: inline;
+            width: 100%;
+            height: 80%;
+            background-color: lavender;
+            color: #00ff00;
+            text-align: center
+        }
+        h1{
+            transition: transform 0.6s;
+        }
+         h1:hover{
+            transform: scaleX(1.1)scaleY(1.2);
+         }
+
+        img {
+            width: 350px;
+            height: 200px;
+            border: 2px solid white;
+            margin: 5px;
+            padding: 5px;
+    
+        }
+
+        .keypersons {
+            display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-gap: 20px;
+        }
+        .keyperson1 a{
+            color: #fff;
+        }
+    
+        
+
+        h2 {
+            margin-left: 10PX;
+            color: #fff;
+         
+            
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            padding-left: 10px;
+            width: 80%;
+        }
+
+        .keyperson1,
+        .keyperson2,
+        .keyperson3 {
+            border: 2px solid;
+            width: 100%;
+            height: 600px;
+            text-overflow: scroll;
+            background-color: #262626;
+            color: #fff;
+            overflow-y: scroll;
+            margin: 5px;
+            padding-left: 5px;
+            transition: transform 0.7s;
+        }
+        .keyperson1:hover{
+            transform:translateY(-10px) scaleX(1.01) scaleY(1.01);
+            border: 1px solid  #0000ff;
+           
+            
+        }
+        .keyperson2:hover{
+            transform:translateY(-10px) scaleX(1.01) scaleY(1.01);
+            border: 1px solid  #0000ff;
+             
+            
+        }
+       
+        .keyperson3:hover{
+            transform:translateY(-10px) scaleX(1.01) ;
+            border: 1px solid  #0000ff;
+           
+        }
+        a {
+            text-decoration: none;
+             color: #080808;
+
+
+        }
+        body::-webkit-scrollbar{
+    display: none;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  } 
+  .btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 2px solid #00FF00;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition:background 0.5s, transform 0.6s;
+ }
+ .btn:hover{
+   background: #00FF00;
+   border-radius: 9px;
+   font-weight: bold;
+   transform: scaleX(1.1) scaleY(1.1);
+   
+
+ }
+ @media only screen and (max-width:600px){
+    body{
+        border:0px solid #080808 ;
+        margin: 0px;
+        overflow: scroll;
+        
+    }
+    .keyperson1,
+        .keyperson2,
+        .keyperson3 {
+         width: 90%;
+         margin-left: -6%;
+        }
+ }
+ 
+    </style>
+</head>
+
+<body>
+    <!-- <h3 style="text-decoration: underline red;;">We provide many service such as:</h3> -->
+    <DIV class="heading">
+        <h1>THE KEYPERSONS OF COMMUNITY</h1>
+    </DIV>
+    <div class="keypersons">
+        <div class="keyperson1">
+            <h2>Mr. ANILKUMAR SHETTY</h2>
+            <p ><img style="float: left;" src="./assets1/anil.jpg"></p>
+            <p>Founder of <a href="www.smeadvisors.in">www.smeadvisors.in</a></p>
+            <p>Anil is a Financial specialist with broad experience in the areas of Investment Banking, Corporate
+                Finance, Financial Management & Risk Advisory. </p>
+                <p>He has direct experience with VC/PE, SME and
+                Agri-business, Financial Consulting, and Risk Management. He founded www.smeadvisors.in</p>
+        </div>
+        <div class="keyperson2">
+            <h2>Ms. SUNITHA H R</h2>
+            <p><img style="float: left;" src="./assets1/sunitha.jpg"></p>
+            <p>Co-Founder of institute</p>
+            <p>Sunitha is a graduate of Business Management and had a successful stint in a management consulting
+                company. She acquired expertise in corporate planning, financial management, supply chain management,
+                production planning & control and business strategy. </p>
+                <p>Thereafter she has been associated with promotion
+                of organic certification and formation of FPOs in the leadership role. Having worked in these areas and
+                being hailed from rural community.</p>
+        </div>
+        <div class="keyperson3">
+            <h2> Mr. R Kantharaj</h2>
+            <p><img style="float:left;" src="./assets1/kantaraj.jpg"></p>
+            <p>Mr R Kantharaj, a renowned name in organic farming promotion and has been striving to promote organic
+                certifications, farmer enrolment and training for the last three decades. </p>
+                <p>He was the founder, director
+                and member of a few organisations where they have rendered yeoman service to promote the cause of
+                organic farming. </p>
+                <p>In recent years he devoted himself to promote the FPO formation in the sates of
+                Karnataka, Telangana , Uttar Pradesh, Jarkhand etc.</p>
+        </div>
+    </div>
+    <!-- <button type="button" class="btn"><a href="./index.html">HOME</a></button> -->
+    <a href="./index.html" class="btn">HOME</a>
+</body>
+
+</html>
